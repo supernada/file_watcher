@@ -22,11 +22,10 @@ How it works:
 First it checks if there's another instance running on Windows -
 if it's already running, a pop-up message returns informing the system is already running - it would be a mess to have more than one watcher. 
 
-It checks for the server number on config.txt if it's a number, it returns error on logs if it's not. (Still working on it - sometimes it doesn't call the error - anyway it shuts)
+It checks for the server number on config.txt if it's a number, it returns error on logs if it's not. (WIP - Still working on it - sometimes it doesn't call the error and I don't know why.)
 It checks if the folder is really a folder/directory
 
-All set, it calls the watcher 
-if it identifies the file was there before launching, it already makes the copy and change the original to .bak extension
+All set, it calls the watcher. If it identifies the file on folder, it already makes the copy and change the original to .bak extension
 
 then it keeps watching undefinitely as it should
 Any problem with the copy it returns info on logs
